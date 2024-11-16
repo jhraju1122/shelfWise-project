@@ -10,11 +10,16 @@ import Main from './components/Pages/Main/Main.jsx';
 import Login from './components/Pages/Login/Login.jsx';
 import Register from './components/Pages/Register/Register.jsx';
 import AddBook from './components/Pages/AddBook/AddBook.jsx';
+import AllBooks from './components/Pages/AllBooks/AllBooks.jsx';
+import BookDetails from './components/Pages/BookDetails/BookDetails.jsx';
+import BorrowedBooks from './components/Pages/BorrowedBooks/BorrowedBooks.jsx';
+import ErrorPage from './components/Pages/Errorpage/ErrorPage.jsx';
   
 const router = createBrowserRouter([
   {
     path: "/",
     element:    <Main></Main> ,
+    errorElement: <ErrorPage></ErrorPage>,
   },
   {
     path: "/login",
@@ -27,6 +32,18 @@ const router = createBrowserRouter([
   {
     path: "/addBook",
     element:  <AddBook></AddBook>,
+   },
+   {
+    path: "/allBooks",
+    element:  <AllBooks></AllBooks>,
+   },
+   {
+    path: "/bookDetails",
+    element:  <BookDetails></BookDetails>,
+   },
+   {
+    path: "/borrowedBooks",
+    element: <BorrowedBooks></BorrowedBooks>,
    },
 ]);
 

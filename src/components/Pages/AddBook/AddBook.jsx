@@ -53,7 +53,7 @@ const AddBook = () => {
       <input type="text" className="grow text-center" name="photo"  placeholder="Photo Url" />
       </div >
 
-          <button type='submit' className="btn mt-5 w-full">Add button</button>
+          <button type='submit' className="btn mt-5 w-full">Add Book</button>
       </form>
      </div>
 
